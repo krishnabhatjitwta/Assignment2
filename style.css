@@ -1,0 +1,36 @@
+body {
+  color: black;
+}
+
+table, tr, td, th {
+  Border-Color: black;
+  border-width: thin;
+  border-spacing: inherit;
+  background-color: lightblue;
+  table-layout: inherit;
+}
+
+.blink {
+  text-align: center;
+  line-height: 50px;
+}
+
+span {
+  font-size: 20px;
+  color: blue;
+  animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: .5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
